@@ -8,7 +8,7 @@ module "name" {
 
 module "vm" {
   source    = "github.com/ParisaMousavi/aws-ec2"
-  subnet_id = data.terraform_remote_state.network.outputs.public_subnet_ids["public_1"]
+  subnet_id = data.terraform_remote_state.network.outputs.network.public_subnet_ids["public_1"]
   additional_tags = {
     Name = module.name.ec2_name
   }
