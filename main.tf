@@ -12,7 +12,7 @@ module "name" {
 
 module "vm" {
   source             = "github.com/ParisaMousavi/aws-ec2"
-  subnet_id          = data.terraform_remote_state.network.outputs.network.public_subnet_ids["public_1"]
+  subnet_id          = data.terraform_remote_state.network.outputs.network.public_subnet_ids["ec2s"]
   instance_type      = "t2.micro"
   security_group_ids = ["${module.sg.id["ingress-all"]}"]
   # key_name           = aws_key_pair.this.id

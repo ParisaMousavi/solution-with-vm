@@ -1,12 +1,12 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "4.33.0"
     }
   }
   backend "s3" {
-    bucket = "terraform-myproje-euc1-dev"
+    bucket = "tname-myproje-terraform-dev-euc1"
     key    = "solution-with-vm/terraform.tfstate"
     region = "eu-central-1"
   }

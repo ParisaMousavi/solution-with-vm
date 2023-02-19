@@ -10,15 +10,15 @@ variable "region_shortname" {
 
 variable "name" {
   type    = string
-  default = null
+  default = "sone"
 }
 
 variable "prefix" {
-  type = string
-  default = "dummy"
+  type    = string
+  default = "tone"
 }
 
 variable "terraform_remote_state_bucket" {
   type    = string
-  default = "terraform-myproje-euc1-dev"
+  default = "tname-myproje-terraform-dev-euc1"
 }
